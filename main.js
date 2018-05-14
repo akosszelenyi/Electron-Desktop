@@ -10,7 +10,7 @@ const { autoUpdater, dialog } = require('electron')
 const path = require('path')
 const url = require('url')
 
-const server = 'hazel-server-delnqpsivz.now.sh'
+const server = 'https://hazel-server-mkspaydpes.now.sh'
   const feed = `${server}/update/${process.platform}/${app.getVersion()}`
 
   autoUpdater.setFeedURL(feed)
