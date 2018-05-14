@@ -89,5 +89,13 @@ autoUpdater.on('update-downloaded', (event, releaseNotes, releaseName) => {
     console.error(message)
   })
 
+  const isDev = require('electron-is-dev');
+// Check if in Dev mode
+  if (isDev) {
+  	console.log('Running in development');
+  } else {
+  	console.log('Running in production');
+  }
+
 // In this file you can include the rest of your app's specific main process
 // code. You can also put them in separate files and require them here.
